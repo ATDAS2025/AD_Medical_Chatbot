@@ -1,2 +1,2 @@
 # AD_Medical_Chatbot
-AD's Medical RAG Chatbot on Gale Encyclopedia of Medicine -v0.1.0
+AD's Medical RAG Chatbot on Gale Encyclopedia of Medicine -V 0.1.0
