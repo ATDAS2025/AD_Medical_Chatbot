@@ -1,2 +1,4 @@
 # AD_Medical_Chatbot
 AD's Medical RAG Chatbot on Gale Encyclopedia of Medicine -v0.1.0
+
+Will put all the contents for Readme.txt later
