@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Chatbot - Brave Coder</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="title">AD's Healthcare Advisor</div>
+        <div id = "chatBox" class="chatbox">
+            <div class="item">
+                <div class="icon">
+                    <i class="fa fa-user-md"></i>
+                </div>&nbsp;&nbsp;
+                <div class="bot-msg">
+                    <p>Hello, How can I help you today ?</p>
+                </div>
+            </div>
+            <br clear="both">
+        </div>
+        
+        <div class="typing-area">
+            <div class="input-field">
+                <input id = "input-field" type="text" placeholder="Type your message" required>
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
