@@ -53,5 +53,6 @@ def index():
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 8000))
-    app.run(host="0.0.0.0", port=port, log_level="debug")
+   # app.run(host="0.0.0.0", port="8080", log_level="debug")
+   app.run(debug=True) # required for Render Production
+   
