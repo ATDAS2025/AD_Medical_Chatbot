@@ -16,8 +16,8 @@ load_dotenv()
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
+os.environ["OPENAI_API_KEY"] = str(OPENAI_API_KEY)
+os.environ["PINECONE_API_KEY"] = str(PINECONE_API_KEY)
 
 embeddings = download_embeddings()
 index_name = "ad-medical-chatbot"
@@ -55,4 +55,3 @@ def index():
 if __name__ == '__main__':
    # app.run(host="0.0.0.0", port="8080", log_level="debug")
    app.run(debug=True) # required for Render Production
-   
